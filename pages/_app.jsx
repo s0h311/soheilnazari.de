@@ -11,7 +11,7 @@ const kanit = Kanit({
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={`${kanit.variable} font-kanit`}>
+    <main className={`${kanit.variable} font-kanit grid place-items-center`}>
       <Layout>
         <Component {...pageProps} />
       </Layout>

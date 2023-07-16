@@ -6,4 +6,25 @@
   background-color: rgb(25 30 35);
   color: #c3dfe0;
   font-family: var(--font-kanit);
+  line-height: 1;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+h1 {
+  color: white;
+  font-size: 24px;
+}
+
+h2 {
+  color: white;
+  font-size: 20px;
+}
+
+h3 {
+  color: white;
+  font-size: 17px;
 }

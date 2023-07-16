@@ -19,8 +19,13 @@ module.exports = {
         DEFAULT: {
           css: {
             color: '#c3dfe0',
-            fontSize: '15pxpx',
+            fontSize: '16px',
             lineHeight: '1.5',
+            p : {
+              color: '#c3dfe0',
+              fontSize: '16px',
+              lineHeight: '1.5', 
+            },
             a: {
               color: '#c3dfe0',
               lineHeight: '1'
@@ -37,7 +42,7 @@ module.exports = {
             },
             h3: {
               color: '#ffffff',
-              fontSize: '17px',
+              fontSize: '18px',
               lineHeight: '1'
             },
           }
