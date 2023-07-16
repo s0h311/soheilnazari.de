@@ -1,0 +1,9 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  background-color: rgb(25 30 35);
+  color: #c3dfe0;
+  font-family: var(--font-kanit);
+}
