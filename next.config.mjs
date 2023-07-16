@@ -4,15 +4,9 @@ import createMDX from '@next/mdx'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    //mdxRs: true,
+    mdxRs: true,
   },
 }
 
-const withMDX = createMDX({
-  extension: /\.mdx?$/,
-  options: {
-    remarkPlugins: [remarkGfm],
-    rehypePlugins: [],
-  },
-})
+const withMDX = createMDX()
 export default withMDX(nextConfig)
