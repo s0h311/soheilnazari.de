@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { MouseEventHandler } from 'react'
 
 interface BtnWithImgProps {
+  onClick: () => void
   imgSrc: string | StaticImport
   title?: string
   height?: number
