@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }) {
   return (
     <main className={`${kanit.variable} py-10 font-kanit grid place-items-center`}>
       {!showSideMenu ? (
-        <div className="w-[90dvw] md:w-[65dvw] grid place-items-center">
+        <div className="w-[90dvw] md:w-[65dvw] grid place-items-center gap-20">
           {isMobile ? (
             <MobileNavbar
               enabled={!showSideMenu}
@@ -29,7 +29,6 @@ export default function App({ Component, pageProps }) {
           ) : (
             <Navbar />
           )}
-          <br className="mb-20" />
           <Component {...pageProps} />
         </div>
       ) : (
