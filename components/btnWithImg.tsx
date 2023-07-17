@@ -7,16 +7,19 @@ interface BtnWithImgProps {
   title?: string
   height?: number
   weight?: number
+  className?: string
 }
 
-export default function BtnWithImg({ onClick, imgSrc, title, height, weight }: BtnWithImgProps) {
+export default function BtnWithImg({ onClick, imgSrc, title, height, weight, className }: BtnWithImgProps) {
   return (
-    <Image
-      onClick={() => onClick()}
-      className="cursor-pointer"
-      src={imgSrc}
-      height={height}
-      alt={`button for ${title}`}
-    />
+    <div className={className}>
+      <Image
+        onClick={() => onClick()}
+        className="cursor-pointer"
+        src={imgSrc}
+        height={height}
+        alt={`button for ${title}`}
+      />
+    </div>
   )
 }

@@ -22,9 +22,10 @@ module.exports = {
             fontSize: '16px',
             lineHeight: '1.5',
             p : {
+              textAlign: 'justify',
               color: '#c3dfe0',
               fontSize: '16px',
-              lineHeight: '1.5', 
+              lineHeight: '1.8', 
             },
             a: {
               color: '#c3dfe0',
