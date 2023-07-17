@@ -21,6 +21,7 @@ export default function SideMenu({ onClose }: SideMenuProps) {
           className="border rounded-3xl p-3 w-2/5 text-center"
           key={menu.id}
           href={menu.route}
+          onClick={() => onClose()}
         >
           {menu.title}
         </Link>
