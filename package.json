@@ -4,7 +4,8 @@
   "private": true,
   "engines": {
     "node": "18.16.*",
-    "npm": "9.7.*"
+    "npm": "9.7.*",
+    "yarn": "3.6.*"
   },
   "scripts": {
     "dev": "next dev",
