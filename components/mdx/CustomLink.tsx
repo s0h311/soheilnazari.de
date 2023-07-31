@@ -1,7 +1,7 @@
 export default function CustomLink(props: any) {
   return (
     <a
-      target="_blank"
+      target='_blank'
       {...props}
     />
   )

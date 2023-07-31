@@ -2,7 +2,7 @@ import '../styles/global.css'
 import { Kanit } from 'next/font/google'
 import { useState } from 'react'
 import Navbar from '../components/navbar'
-import useDeviceType from '../composables/useDeviceType'
+import useDeviceType from '../hooks/useDeviceType'
 import MobileNavbar from '../components/MobileNavbar'
 import SideMenu from '../components/SideMenu'
 
@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }) {
   return (
     <main className={`${kanit.variable} py-10 font-kanit grid place-items-center`}>
       {!showSideMenu ? (
-        <div className="w-[90dvw] md:w-[65dvw] grid place-items-center gap-20">
+        <div className='w-[90dvw] md:w-[65dvw] grid place-items-center gap-20'>
           {isMobile ? (
             <MobileNavbar
               enabled={!showSideMenu}

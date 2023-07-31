@@ -1,21 +1,21 @@
 import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import Image from 'next/image'
 
-interface BtnWithImgProps {
+type BtnWithImgProps = {
   onClick: () => void
   imgSrc: string | StaticImport
   title?: string
   height?: number
-  weight?: number
+  width?: number
   className?: string
 }
 
-export default function BtnWithImg({ onClick, imgSrc, title, height, weight, className }: BtnWithImgProps) {
+export default function BtnWithImg({ onClick, imgSrc, title, height, width, className }: BtnWithImgProps) {
   return (
     <div className={className}>
       <Image
         onClick={() => onClick()}
-        className="cursor-pointer"
+        className='cursor-pointer'
         src={imgSrc}
         height={height}
         alt={`button for ${title}`}

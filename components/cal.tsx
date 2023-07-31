@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 
 export default function Cal() {
   useEffect(() => {
-    ;(async function () {
+    ;(async () => {
       const cal = await getCalApi()
       cal('ui', {
         theme: 'light',
@@ -16,11 +16,11 @@ export default function Cal() {
         layout: 'month_view',
       })
     })()
-  }, [])
+  })
   return (
     <button
-      className="border rounded-3xl px-3 py-2"
-      data-cal-link="soheiln/30min"
+      className='border rounded-3xl px-3 py-2'
+      data-cal-link='soheiln/30min'
       data-cal-config='{"layout":"month_view"}'
     >
       Click to Book
