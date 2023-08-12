@@ -12,14 +12,16 @@ type BtnWithImgProps = {
 
 export default function BtnWithImg({ onClick, imgSrc, title, height, width, className }: BtnWithImgProps) {
   return (
-    <div className={className}>
+    <button
+      className={className}
+      onClick={() => onClick()}
+      aria-label={`button for ${title}`}
+    >
       <Image
-        onClick={() => onClick()}
-        className='cursor-pointer'
         src={imgSrc}
         height={height}
-        alt={`button for ${title}`}
+        alt=''
       />
-    </div>
+    </button>
   )
 }

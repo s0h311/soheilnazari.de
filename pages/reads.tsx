@@ -1,9 +1,15 @@
 import Books from '../content/books.mdx'
+import { Metadata } from 'next'
 
-export default function WhatIRead() {
+export const metadata: Metadata = {
+  title: 'Reads | Soheil Nazari',
+  description: 'What I read',
+}
+
+export default function Reads() {
   return (
-    <div className='prose'>
+    <article className='prose w-full'>
       <Books />
-    </div>
+    </article>
   )
 }

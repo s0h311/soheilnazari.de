@@ -1,9 +1,15 @@
-import Work from '../content/work.mdx'
+import WorkArtice from '../content/work.mdx'
+import { Metadata } from 'next'
 
-export default function WhatIDo() {
+export const metadata: Metadata = {
+  title: 'Work | Soheil Nazari',
+  description: 'How I spent my time',
+}
+
+export default function Work() {
   return (
-    <div className='prose'>
-      <Work />
-    </div>
+    <article className='prose w-full'>
+      <WorkArtice />
+    </article>
   )
 }

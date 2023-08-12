@@ -12,7 +12,6 @@ const kanit = Kanit({
   subsets: ['latin'],
   variable: '--font-kanit',
 })
-
 export default function App({ Component, pageProps }) {
   const { isMobile } = useDeviceType()
   const [showSideMenu, setShowSideMenu] = useState(false)
@@ -20,7 +19,7 @@ export default function App({ Component, pageProps }) {
   return (
     <main className={`${kanit.variable} py-10 font-kanit grid place-items-center`}>
       {!showSideMenu ? (
-        <div className='w-[90dvw] md:w-[65dvw] grid place-items-center gap-20'>
+        <section className='w-[90dvw] md:w-[65dvw] grid place-items-center gap-20'>
           {isMobile ? (
             <MobileNavbar
               enabled={!showSideMenu}
@@ -30,7 +29,7 @@ export default function App({ Component, pageProps }) {
             <Navbar />
           )}
           <Component {...pageProps} />
-        </div>
+        </section>
       ) : (
         <SideMenu onClose={() => setShowSideMenu(!showSideMenu)} />
       )}

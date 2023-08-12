@@ -10,29 +10,32 @@ type MobileNavbarProps = {
 
 export default function MobileNavbar({ onClick, enabled }: MobileNavbarProps) {
   return enabled ? (
-    <div className='flex items-center w-full relative'>
-      <Link
-        className='text-xl hover:underline'
-        href='/'
-      >
-        S | N
-      </Link>
-      <div className='flex items-center space-x-5 absolute right-0'>
+    <nav className='flex items-center w-full relative'>
+      <button>
+        <Link
+          className='text-xl hover:underline'
+          href='/'
+        >
+          S | N
+        </Link>
+      </button>
+      <ul className='flex items-center space-x-5 absolute right-0 list-none'>
         {SocialLinks.map((link) => (
-          <BtnWithImg
-            onClick={() => window.open(link.url)}
-            key={link.id}
-            imgSrc={link.icon}
-            height={25}
-          />
+          <li key={link.id}>
+            <BtnWithImg
+              onClick={() => window.open(link.url)}
+              imgSrc={link.icon}
+              height={25}
+            />
+          </li>
         ))}
         <BtnWithImg
           onClick={() => onClick()}
           imgSrc={MenuIcon}
           height={20}
         />
-      </div>
-    </div>
+      </ul>
+    </nav>
   ) : (
     ''
   )
