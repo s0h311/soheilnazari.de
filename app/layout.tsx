@@ -1,8 +1,6 @@
 import '../styles/global.css'
 import { Kanit } from 'next/font/google'
-import { useState } from 'react'
 import Navbar from '../components/navbar'
-import useDeviceType from '../hooks/useDeviceType'
 import MobileNavbar from '../components/mobileNavbar'
 import { Metadata } from 'next'
 
