@@ -1,7 +1,7 @@
 import '@/styles/global.css'
 import { Kanit } from 'next/font/google'
-import Navbar from '@/components/navbar'
-import MobileNavbar from '@/components/mobileNavbar'
+import Navbar from '@/components/Navbar'
+import MobileNavbar from '@/components/MobileNavbar'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {

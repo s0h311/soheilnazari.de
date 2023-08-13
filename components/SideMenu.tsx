@@ -1,7 +1,7 @@
 import { Menus } from '@/types/types'
 import Link from 'next/link'
 import CloseIcon from '@/public/icons/close.webp'
-import BtnWithImg from './btnWithImg'
+import BtnWithImg from './BtnWithImg'
 
 type SideMenuProps = {
   onClose: () => void

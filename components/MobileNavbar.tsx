@@ -1,10 +1,10 @@
 'use client'
 
-import BtnWithImg from './btnWithImg'
+import BtnWithImg from './BtnWithImg'
 import MenuIcon from '@/public/icons/menu.webp'
 import { SocialLinks } from '@/types/types'
 import Link from 'next/link'
-import SideMenu from '@/components/sideMenu'
+import SideMenu from '@/components/SideMenu'
 import { useState } from 'react'
 import useDeviceType from '@/hooks/useDeviceType'
 
