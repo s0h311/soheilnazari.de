@@ -1,9 +1,14 @@
+'use client'
+
 import Link from 'next/link'
 import BtnWithImg from './btnWithImg'
 import { Menus, SocialLinks } from '../types/types'
+import useDeviceType from '../hooks/useDeviceType'
 
 export default function Navbar() {
-  return (
+  const { isMobile } = useDeviceType()
+
+  return !isMobile ? (
     <nav className='flex items-center justify-center relative w-full xl:w-[45dvw] bg-[#2f323a] rounded-3xl p-6'>
       <ul className='flex space-x-6 xl:space-x-10 justify-center list-none'>
         <button>
@@ -37,5 +42,7 @@ export default function Navbar() {
         ))}
       </ul>
     </nav>
+  ) : (
+    ''
   )
 }

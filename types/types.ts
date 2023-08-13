@@ -19,8 +19,8 @@ const Menus = [
   },
   {
     id: 4,
-    title: 'Chat with me',
-    route: '/chatwithme',
+    title: 'Contact',
+    route: '/contact',
   },
 ]
 
