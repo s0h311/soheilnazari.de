@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import BtnWithImg from './BtnWithImg'
+import BtnWithImg from './btnWithImg'
 import { Menus, SocialLinks } from '@/types/types'
 import useDeviceType from '@/hooks/useDeviceType'
 
