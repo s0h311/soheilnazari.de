@@ -10,7 +10,7 @@ type SideMenuProps = {
 export default function SideMenu({ onClose }: SideMenuProps) {
   return (
     <>
-      <nav className='grid w-[90dvw] gap-10 relative'>
+      <nav className='w-[70dvw] full relative'>
         <button>
           <BtnWithImg
             className='absolute right-0 top-0'
@@ -19,21 +19,22 @@ export default function SideMenu({ onClose }: SideMenuProps) {
             height={20}
           />
         </button>
-        <ul className='grid place-items-center gap-10 w-full list-none'>
+        <ul className='mt-10 list-none'>
           {Menus.map((menu) => (
             <li
-              className='border rounded-3xl p-3 w-2/5 text-center'
+              className='border rounded-3xl p-3 mb-5 text-center'
               key={menu.id}
             >
-              <Link
-                href={menu.route}
+              <button
+                className='w-full'
                 onClick={() => onClose()}
               >
-                {menu.title}
-              </Link>
+                <Link href={menu.route}>{menu.title}</Link>
+              </button>
             </li>
           ))}
         </ul>
+        <hr className='border[0.5px] w-full -mb-10' />
       </nav>
     </>
   )

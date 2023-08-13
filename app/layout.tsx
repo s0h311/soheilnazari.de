@@ -22,12 +22,16 @@ type RootLayoutProps = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <main className={`${kanit.variable} py-10 font-kanit grid place-items-center`}>
-      <section className='w-[90dvw] md:w-[65dvw] grid place-items-center gap-20'>
-        <MobileNavbar />
-        <Navbar />
-        {children}
-      </section>
-    </main>
+    <html lang='en'>
+      <body>
+        <main className={`${kanit.variable} py-10 font-kanit grid place-items-center`}>
+          <section className='w-[90dvw] md:w-[65dvw] grid place-items-center gap-20'>
+            <MobileNavbar />
+            <Navbar />
+            {children}
+          </section>
+        </main>
+      </body>
+    </html>
   )
 }
