@@ -1,6 +1,6 @@
-import { Menus } from '../types/types'
+import { Menus } from '@/types/types'
 import Link from 'next/link'
-import CloseIcon from '../public/icons/close.webp'
+import CloseIcon from '@/public/icons/close.webp'
 import BtnWithImg from './btnWithImg'
 
 type SideMenuProps = {

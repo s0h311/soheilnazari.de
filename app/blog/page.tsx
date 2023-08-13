@@ -1,4 +1,4 @@
-import Articles from '../../content/blog.mdx'
+import Articles from '@/content/blog.mdx'
 
 export default function Blog() {
   return (

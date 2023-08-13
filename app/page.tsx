@@ -1,4 +1,4 @@
-import Hello from '../content/hello.mdx'
+import Hello from '@/content/hello.mdx'
 
 export default function Home() {
   return (

@@ -2,8 +2,8 @@
 
 import Link from 'next/link'
 import BtnWithImg from './btnWithImg'
-import { Menus, SocialLinks } from '../types/types'
-import useDeviceType from '../hooks/useDeviceType'
+import { Menus, SocialLinks } from '@/types/types'
+import useDeviceType from '@/hooks/useDeviceType'
 
 export default function Navbar() {
   const { isMobile } = useDeviceType()

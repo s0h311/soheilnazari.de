@@ -1,12 +1,12 @@
 'use client'
 
 import BtnWithImg from './btnWithImg'
-import MenuIcon from '../public/icons/menu.webp'
-import { SocialLinks } from '../types/types'
+import MenuIcon from '@/public/icons/menu.webp'
+import { SocialLinks } from '@/types/types'
 import Link from 'next/link'
-import SideMenu from '../components/sideMenu'
+import SideMenu from '@/components/sideMenu'
 import { useState } from 'react'
-import useDeviceType from '../hooks/useDeviceType'
+import useDeviceType from '@/hooks/useDeviceType'
 
 export default function MobileNavbar() {
   const { isMobile } = useDeviceType()

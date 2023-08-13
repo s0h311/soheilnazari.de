@@ -1,4 +1,4 @@
-import WorkArtice from '../../content/work.mdx'
+import WorkArtice from '@/content/work.mdx'
 
 export default function Work() {
   return (
