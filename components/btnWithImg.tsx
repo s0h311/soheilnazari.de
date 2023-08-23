@@ -22,6 +22,7 @@ export default function BtnWithImg({ onClick, imgSrc, title, height, width, clas
       <Image
         src={imgSrc}
         height={height}
+        width={width}
         alt=''
       />
     </button>

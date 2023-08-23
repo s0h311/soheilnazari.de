@@ -3,6 +3,7 @@ import { Kanit } from 'next/font/google'
 import Navbar from '@/components/navbar'
 import MobileNavbar from '@/components/mobileNavbar'
 import { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react'
 
 export const metadata: Metadata = {
   title: 'Welcome | Soheil Nazari',
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <MobileNavbar />
             <Navbar />
             {children}
+            <Analytics />
           </section>
         </main>
       </body>
