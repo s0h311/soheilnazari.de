@@ -10,9 +10,5 @@ type WorkLayoutProps = {
 }
 
 export default function WorkLayout({ children }: WorkLayoutProps) {
-  return (
-    <>
-      <section>{children}</section>
-    </>
-  )
+  return <section>{children}</section>
 }

@@ -1,5 +1,3 @@
-'use client'
-
 import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import Image from 'next/image'
 
@@ -16,7 +14,7 @@ export default function BtnWithImg({ onClick, imgSrc, title, height, width, clas
   return (
     <button
       className={className}
-      onClick={() => onClick()}
+      onClick={onClick}
       aria-label={`button for ${title}`}
     >
       <Image

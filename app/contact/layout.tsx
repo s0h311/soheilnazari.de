@@ -10,9 +10,5 @@ type ContactLayoutProps = {
 }
 
 export default function ContactLayout({ children }: ContactLayoutProps) {
-  return (
-    <>
-      <section className='grid place-items-center w-full gap-5 prose'>{children}</section>
-    </>
-  )
+  return <section className='grid place-items-center w-full gap-5 prose'>{children}</section>
 }

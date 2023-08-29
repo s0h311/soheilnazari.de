@@ -11,8 +11,6 @@ type BlogLayoutProps = {
 
 export default function BlogLayout({ children }: BlogLayoutProps) {
   return (
-    <>
       <section className='w-full prose'>{children}</section>
-    </>
   )
 }

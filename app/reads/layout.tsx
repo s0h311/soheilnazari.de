@@ -10,9 +10,5 @@ type ReadsLayoutProps = {
 }
 
 export default function ReadsLayout({ children }: ReadsLayoutProps) {
-  return (
-    <>
-      <section className='prose w-full'>{children}</section>
-    </>
-  )
+  return <section className='prose w-full'>{children}</section>
 }
