@@ -21,15 +21,11 @@ export default function SideMenu({ onClose }: SideMenuProps) {
       <ul className='mt-10 list-none'>
         {Menus.map((menu) => (
           <li
-            className='border rounded-3xl p-3 mb-5 text-center'
+            className='border rounded-3xl p-3 mb-5 text-center flex justify-center'
             key={menu.id}
+            onClick={onClose}
           >
-            <button
-              className='w-full'
-              onClick={() => onClose()}
-            >
-              <Link href={menu.route}>{menu.title}</Link>
-            </button>
+            <Link className='w-full' href={menu.route}>{menu.title}</Link>
           </li>
         ))}
       </ul>
